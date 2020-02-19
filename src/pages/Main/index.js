@@ -5,11 +5,15 @@ import { Container, Form, SubmitButton, Input } from './styles';
 export default class Main extends Component{
     state = {
         binaryNumber: '',
-        decimalNumber: '',
+        decimalNumber: '',        
     };
 
     handleInputChange = e => {
-        this.setState({ binaryNumber: e.target.value })
+        let lastNumber = e.target.value.substring(e.target.value.length-1);
+
+        if(lastNumber === '0' || lastNumber === '1' || lastNumber === ''){
+            this.setState({ binaryNumber: e.target.value });
+        }
     };
 
     handleSubmit = e => {
@@ -20,10 +24,6 @@ export default class Main extends Component{
         this.setState({
             decimalNumber: parseInt(binaryNumber,2),
         });
-    };
-
-    checkNumberDifferent = e => {
-        
     };
 
     render(){
@@ -37,10 +37,10 @@ export default class Main extends Component{
                     <div>
                         <Input
                         type="text"
-                        min="0"
                         placeholder="Digite 0 ou 1"
                         value={binaryNumber}
                         onChange={this.handleInputChange}
+                        maxLength="8"
                         />
 
                         <SubmitButton>
@@ -54,8 +54,7 @@ export default class Main extends Component{
                     type="text"
                     value={decimalNumber}
                     disabled                
-                    />
-                    
+                    />                    
                 </Form>                
             </Container>
         );
