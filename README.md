@@ -1,18 +1,20 @@
 # Conversor Binario Para Decimal
 
-Projeto Criado em React.
+## Projeto Criado em React.
 
-<h2> Para executar o projeto na sua maquina é preciso ter: </h2>
+### Requisitos:
 <ul>
   <li>Nodejs</li>
   <li>Yarn</li>
 </ul>
  
   
-<h2> Executar Aplicação WEB: </h2>
-<ul>
-  <li>No terminal escrever:</li>
-  <li>yarn</li>
-  <li>yarn start</li>
-</ul>
+### Executar Aplicação WEB: 
 
+#### No terminal escrever:
+
+*Baixa os Arquivos Necessários.
+>  yarn
+
+*Executa o Projeto.
+>  yarn start
