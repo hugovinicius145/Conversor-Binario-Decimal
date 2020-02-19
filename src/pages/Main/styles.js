@@ -29,17 +29,17 @@ export const Form = styled.form`
         font-size: 15px;
         color: rgb(102, 102, 102);
         font-weight: bolder;
+        margin-bottom: 5px;
+    }
+
+    div{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
     }
 `;
 
-export const DivRow = styled.div`
-    display: flex;
-    flex-direction: row;
-    margin-top: 5px;
-    margin-bottom: 5px;
-`;
-
-export const BinaryInput = styled.input`
+export const Input = styled.input`
     flex: 1;
     border: 1px solid #eee;
     padding: 10px 15px;
@@ -47,6 +47,7 @@ export const BinaryInput = styled.input`
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    background: #FFF;
 `;
 
 export const SubmitButton = styled.button`
@@ -59,16 +60,6 @@ export const SubmitButton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-`;
-
-export const DecimalInput = styled.input`
-    flex: 1;
-    border: 1px solid #eee;
-    padding: 10px 15px;
-    border-radius: 4px;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-
-    margin-top: 5px;
-    background: #FFF;
+    
+    cursor: pointer;
 `;
