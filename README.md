@@ -2,6 +2,12 @@
 
 ## Projeto Criado em React.
 
+![Conversor Binario Decimal](https://i.imgur.com/37ad6mw.jpg)
+
+### Link de Demonstração
+
+[Conversor de Binário para Decimal](https://hugovinicius145.github.io/Conversor-Binario-Decimal/)
+
 ### Requisitos:
 <ul>
   <li>Nodejs</li>
@@ -10,6 +16,10 @@
  
   
 ### Executar Aplicação WEB: 
+
+#### Clonar o Repositório
+
+#### Entrar na Pasta
 
 #### No terminal escrever:
 
